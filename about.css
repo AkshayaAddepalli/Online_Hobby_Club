@@ -18,39 +18,77 @@ body {
 }
 
 /* Navigation Bar */
+/* Navigation Bar */
 .navbar {
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
-    padding: 15px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .navbar ul {
     list-style: none;
+    display: flex;
     padding: 0;
     margin: 0;
 }
 
 .navbar ul li {
-    display: inline;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 .navbar ul li a {
-    color: white;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    transition: 0.3s ease;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: 0.3s;
+    border-radius: 5px;
 }
 
-.navbar ul li a:hover {
-    color: #ffcc00;
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    background: #ff5a5f;
+    color: #fff;
 }
+
+/* Login & Sign Up Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn, .signup-btn {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.login-btn {
+    background: transparent;
+    border: 2px solid #ff5a5f;
+    color: #ff5a5f;
+}
+
+.login-btn:hover {
+    background: #ff5a5f;
+    color: #fff;
+}
+
+.signup-btn {
+    background: #ff5a5f;
+    color: #fff;
+    border: 2px solid #ff5a5f;
+}
+
+.signup-btn:hover {
+    background: #ff2d55;
+}
+
 
 /* About Section */
 .about-section {
