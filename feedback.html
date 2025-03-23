@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Online Hobby Club</title>
+    <link rel="stylesheet" href="feedback.css">
+    <script defer src="feedback.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="feedback-box">
+            <h2>We Value Your Feedback! ⭐</h2>
+            <p>Tell us about your experience. Your feedback helps us improve!</p>
+            
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                
+                <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+
+                <div class="input-group">
+                    <textarea id="message" name="message" rows="4" placeholder="Your Feedback" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h3>🎉 Feedback Submitted!</h3>
+            <p>Thank you for sharing your thoughts with us! 😊</p>
+            <button id="closePopup">OK</button>
+        </div>
+    </div>
+    
+</body>
+</html>
